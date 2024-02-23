@@ -10,7 +10,6 @@ namespace OOPS.PD3
     {
         List<string> words = [];
         public bool GameOver = false;
-
         public dynamic Play(string word)
         {
             if (words.Count != 0)

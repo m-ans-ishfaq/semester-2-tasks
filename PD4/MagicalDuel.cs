@@ -44,7 +44,7 @@ namespace OOPS.PD4
         }
         public bool SetHealth(int NewHealth)
         {
-            if (NewHealth >= 0 && NewHealth >= MaxHP)
+            if (NewHealth >= 0 && NewHealth <= MaxHP)
             {
                 this.HP = NewHealth;
                 return true;
@@ -53,7 +53,7 @@ namespace OOPS.PD4
         }
         public bool SetEnergy(int NewEnergy)
         {
-            if (NewEnergy >= 0 && NewEnergy >= MaxEnergy)
+            if (NewEnergy >= 0 && NewEnergy <= MaxEnergy)
             {
                 this.Energy = NewEnergy;
                 return true;

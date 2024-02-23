@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Transactions;
-using Challenges.One;
-using SelfAssessment.Two;
+using LIB;
+using PD5.CSMS;
 
 namespace OOPS
 {
@@ -9,8 +8,8 @@ namespace OOPS
     {
         public static void Main(string[] args)
         {
-            Calculator c = new Calculator(2, 3);
-            c.Add();
+            Repository<Item> items = new("./PD5/CSMS/DB/");
+            items.Show();
         }
     }
 }
